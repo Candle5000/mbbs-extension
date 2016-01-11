@@ -9,12 +9,9 @@
 	}
 
 	// 広告削除
-	var ad;
-	ad = document.getElementById('imobile_adspotdiv1');
-	if(ad != null) {
-		while(ad.parentElement.nextElementSibling != null) {
-			ad.parentElement.nextElementSibling.remove();
-		}
-		ad.parentElement.remove();
-	}
+	var ad_img, d, ad_start;
+	ad_img = document.getElementById('imobile_adspotdiv1');
+	if(ad_img != null) ad_img.remove();
+	d = document.getElementsByTagName('center');
+	d[d.length-1].remove();
 })(this);
